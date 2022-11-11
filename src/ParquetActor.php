@@ -1,15 +1,15 @@
 <?php
-namespace jocoon\parquet;
+namespace hongkai\parquet;
 
 use Exception;
 
-use jocoon\parquet\adapter\BinaryReader;
+use hongkai\parquet\adapter\BinaryReader;
 
-use jocoon\parquet\exception\ArgumentNullException;
+use hongkai\parquet\exception\ArgumentNullException;
 
-use jocoon\parquet\file\ThriftStream;
+use hongkai\parquet\file\ThriftStream;
 
-use jocoon\parquet\format\FileMetaData;
+use hongkai\parquet\format\FileMetaData;
 
 /**
  * [ParquetActor description]
@@ -42,7 +42,7 @@ class ParquetActor {
 
   /**
    * [private description]
-   * @var \jocoon\parquet\adapter\BinaryWriter
+   * @var \hongkai\parquet\adapter\BinaryWriter
    */
   protected $Writer;
 
@@ -71,8 +71,8 @@ class ParquetActor {
     //
     // NOTE: Readers/writers should use little endian, by default
     //
-    $this->Reader = \jocoon\parquet\adapter\BinaryReader::createInstance($this->_fileStream);
-    $this->Writer = \jocoon\parquet\adapter\BinaryWriter::createInstance($this->_fileStream);
+    $this->Reader = \hongkai\parquet\adapter\BinaryReader::createInstance($this->_fileStream);
+    $this->Writer = \hongkai\parquet\adapter\BinaryWriter::createInstance($this->_fileStream);
 
     $this->ThriftStream = new ThriftStream($this->_fileStream);
   }

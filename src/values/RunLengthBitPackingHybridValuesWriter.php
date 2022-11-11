@@ -1,9 +1,9 @@
 <?php
-namespace jocoon\parquet\values;
+namespace hongkai\parquet\values;
 
 use Exception;
 
-use jocoon\parquet\adapter\BinaryWriter;
+use hongkai\parquet\adapter\BinaryWriter;
 
 /**
  * [RunLengthBitPackingHybridValuesWriter description]
@@ -29,8 +29,8 @@ class RunLengthBitPackingHybridValuesWriter
     // echo("WriteForwardOnly");
     // var_dump($data);
 
-    $bw = \jocoon\parquet\adapter\BinaryWriter::createInstance($ms);
-    // $bw->setOrder(\jocoon\parquet\adapter\BinaryWriter::LITTLE_ENDIAN); // enforce little endian
+    $bw = \hongkai\parquet\adapter\BinaryWriter::createInstance($ms);
+    // $bw->setOrder(\hongkai\parquet\adapter\BinaryWriter::LITTLE_ENDIAN); // enforce little endian
     //
     // using (var bw = new BinaryWriter(ms, Encoding.UTF8, true))
     // {
@@ -52,7 +52,7 @@ class RunLengthBitPackingHybridValuesWriter
     // DEBUG/TODO: do we need to reset this one?
     // $writer->setPosition(0);
 
-    // if($writer instanceof \jocoon\parquet\adapter\BinaryWriter) {
+    // if($writer instanceof \hongkai\parquet\adapter\BinaryWriter) {
     //   $writer->insert()
     // }
     // $streamContent = stream_get_contents($ms);

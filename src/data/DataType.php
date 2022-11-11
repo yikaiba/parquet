@@ -1,5 +1,5 @@
 <?php
-namespace jocoon\parquet\data;
+namespace hongkai\parquet\data;
 
 /**
  * [abstract description]

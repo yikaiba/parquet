@@ -1,9 +1,9 @@
 <?php
 
-use jocoon\parquet\ParquetOptions;
-use jocoon\parquet\ParquetReader;
-use jocoon\parquet\ParquetWriter;
-use jocoon\parquet\CompressionMethod;
+use hongkai\parquet\ParquetOptions;
+use hongkai\parquet\ParquetReader;
+use hongkai\parquet\ParquetWriter;
+use hongkai\parquet\CompressionMethod;
 
 require_once('vendor/autoload.php');
 ini_set('memory_limit', '4G');

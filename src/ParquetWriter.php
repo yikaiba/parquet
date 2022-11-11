@@ -1,13 +1,13 @@
 <?php
-namespace jocoon\parquet;
+namespace hongkai\parquet;
 
 use Exception;
 
-use jocoon\parquet\data\Schema;
-use jocoon\parquet\data\DataColumn;
+use hongkai\parquet\data\Schema;
+use hongkai\parquet\data\DataColumn;
 
-use jocoon\parquet\file\ThriftFooter;
-use jocoon\parquet\file\DataStreamFactory;
+use hongkai\parquet\file\ThriftFooter;
+use hongkai\parquet\file\DataStreamFactory;
 
 /**
  * [ParquetWriter description]

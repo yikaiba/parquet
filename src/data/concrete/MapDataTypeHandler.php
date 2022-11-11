@@ -1,15 +1,15 @@
 <?php
-namespace jocoon\parquet\data\concrete;
+namespace hongkai\parquet\data\concrete;
 
 use Exception;
 
-use jocoon\parquet\data\Field;
-use jocoon\parquet\data\Schema;
-use jocoon\parquet\data\MapField;
-use jocoon\parquet\data\SchemaType;
-use jocoon\parquet\data\NonDataDataTypeHandler;
+use hongkai\parquet\data\Field;
+use hongkai\parquet\data\Schema;
+use hongkai\parquet\data\MapField;
+use hongkai\parquet\data\SchemaType;
+use hongkai\parquet\data\NonDataDataTypeHandler;
 
-use jocoon\parquet\format\ConvertedType;
+use hongkai\parquet\format\ConvertedType;
 
 class MapDataTypeHandler extends NonDataDataTypeHandler
 {
@@ -17,8 +17,8 @@ class MapDataTypeHandler extends NonDataDataTypeHandler
    * @inheritDoc
    */
   public function isMatch(
-    \jocoon\parquet\format\SchemaElement $tse,
-    ?\jocoon\parquet\ParquetOptions $formatOptions
+    \hongkai\parquet\format\SchemaElement $tse,
+    ?\hongkai\parquet\ParquetOptions $formatOptions
   ): bool {
     return isset($tse->converted_type) && ($tse->converted_type === ConvertedType::MAP || $tse->converted_type === ConvertedType::MAP_KEY_VALUE);
   }
@@ -64,8 +64,8 @@ class MapDataTypeHandler extends NonDataDataTypeHandler
    * @inheritDoc
    */
   public function createThrift(
-    \jocoon\parquet\data\Field $field,
-    \jocoon\parquet\format\SchemaElement $parent,
+    \hongkai\parquet\data\Field $field,
+    \hongkai\parquet\format\SchemaElement $parent,
     array &$container
   ): void {
     throw new \LogicException('Not implemented'); // TODO

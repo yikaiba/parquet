@@ -1,14 +1,14 @@
 <?php
-namespace jocoon\parquet;
+namespace hongkai\parquet;
 
 use Exception;
 
-use jocoon\parquet\data\Schema;
-use jocoon\parquet\data\DataColumn;
+use hongkai\parquet\data\Schema;
+use hongkai\parquet\data\DataColumn;
 
-use jocoon\parquet\file\ThriftFooter;
+use hongkai\parquet\file\ThriftFooter;
 
-use jocoon\parquet\format\FileMetaData;
+use hongkai\parquet\format\FileMetaData;
 
 /**
  * Parquet file format reader implementation

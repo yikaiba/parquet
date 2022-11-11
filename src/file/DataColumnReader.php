@@ -1,24 +1,24 @@
 <?php
-namespace jocoon\parquet\file;
+namespace hongkai\parquet\file;
 
-use jocoon\parquet\ParquetOptions;
+use hongkai\parquet\ParquetOptions;
 
-use jocoon\parquet\adapter\BinaryReader;
+use hongkai\parquet\adapter\BinaryReader;
 
-use jocoon\parquet\data\DataType;
-use jocoon\parquet\data\DataField;
-use jocoon\parquet\data\DataColumn;
-use jocoon\parquet\data\DataTypeFactory;
-use jocoon\parquet\data\DataColumnStatistics;
-use jocoon\parquet\data\DataTypeHandlerInterface;
+use hongkai\parquet\data\DataType;
+use hongkai\parquet\data\DataField;
+use hongkai\parquet\data\DataColumn;
+use hongkai\parquet\data\DataTypeFactory;
+use hongkai\parquet\data\DataColumnStatistics;
+use hongkai\parquet\data\DataTypeHandlerInterface;
 
-use jocoon\parquet\format\Encoding;
-use jocoon\parquet\format\PageType;
-use jocoon\parquet\format\PageHeader;
-use jocoon\parquet\format\ColumnChunk;
-use jocoon\parquet\format\SchemaElement;
+use hongkai\parquet\format\Encoding;
+use hongkai\parquet\format\PageType;
+use hongkai\parquet\format\PageHeader;
+use hongkai\parquet\format\ColumnChunk;
+use hongkai\parquet\format\SchemaElement;
 
-use jocoon\parquet\values\RunLengthBitPackingHybridValuesReader;
+use hongkai\parquet\values\RunLengthBitPackingHybridValuesReader;
 
 class DataColumnReader
 {
@@ -148,7 +148,7 @@ class DataColumnReader
 
     $bytes = $this->readPageDataByPageHeader($ph);
 
-    $reader = \jocoon\parquet\adapter\BinaryReader::createInstance($bytes);
+    $reader = \hongkai\parquet\adapter\BinaryReader::createInstance($bytes);
 
     if($this->maxRepetitionLevel > 0) {
       //todo: use rented buffers, but be aware that rented length can be more than requested so underlying logic relying on array length must be fixed too.
@@ -521,7 +521,7 @@ class DataColumnReader
 
         // using (var dataReader = new BinaryReader(ms))
         // {
-    $dataReader = \jocoon\parquet\adapter\BinaryReader::createInstance($bytes); // new \jocoon\parquet\adapter\PhpBinaryReader($ms);
+    $dataReader = \hongkai\parquet\adapter\BinaryReader::createInstance($bytes); // new \hongkai\parquet\adapter\PhpBinaryReader($ms);
 
 
         // dictionary = _dataTypeHandler.GetArray(ph.Dictionary_page_header.Num_values, false, false);

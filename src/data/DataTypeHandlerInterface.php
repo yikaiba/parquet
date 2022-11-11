@@ -1,12 +1,12 @@
 <?php
-namespace jocoon\parquet\data;
+namespace hongkai\parquet\data;
 
-use jocoon\parquet\ParquetOptions;
+use hongkai\parquet\ParquetOptions;
 
-use jocoon\parquet\adapter\BinaryReader;
-use jocoon\parquet\adapter\BinaryWriter;
+use hongkai\parquet\adapter\BinaryReader;
+use hongkai\parquet\adapter\BinaryWriter;
 
-use jocoon\parquet\format\SchemaElement;
+use hongkai\parquet\format\SchemaElement;
 
 interface DataTypeHandlerInterface
 {

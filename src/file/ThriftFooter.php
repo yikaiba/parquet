@@ -1,25 +1,25 @@
 <?php
-namespace jocoon\parquet\file;
+namespace hongkai\parquet\file;
 
-use jocoon\parquet\ParquetOptions;
+use hongkai\parquet\ParquetOptions;
 
-use jocoon\parquet\data\Field;
-use jocoon\parquet\data\Schema;
-use jocoon\parquet\data\DataField;
-use jocoon\parquet\data\DataFactory;
-use jocoon\parquet\data\DataTypeFactory;
+use hongkai\parquet\data\Field;
+use hongkai\parquet\data\Schema;
+use hongkai\parquet\data\DataField;
+use hongkai\parquet\data\DataFactory;
+use hongkai\parquet\data\DataTypeFactory;
 
-use jocoon\parquet\format\Encoding;
-use jocoon\parquet\format\PageType;
-use jocoon\parquet\format\RowGroup;
-use jocoon\parquet\format\PageHeader;
-use jocoon\parquet\format\Statistics;
-use jocoon\parquet\format\ColumnChunk;
-use jocoon\parquet\format\FileMetaData;
-use jocoon\parquet\format\SchemaElement;
-use jocoon\parquet\format\ColumnMetaData;
-use jocoon\parquet\format\DataPageHeader;
-use jocoon\parquet\format\FieldRepetitionType;
+use hongkai\parquet\format\Encoding;
+use hongkai\parquet\format\PageType;
+use hongkai\parquet\format\RowGroup;
+use hongkai\parquet\format\PageHeader;
+use hongkai\parquet\format\Statistics;
+use hongkai\parquet\format\ColumnChunk;
+use hongkai\parquet\format\FileMetaData;
+use hongkai\parquet\format\SchemaElement;
+use hongkai\parquet\format\ColumnMetaData;
+use hongkai\parquet\format\DataPageHeader;
+use hongkai\parquet\format\FieldRepetitionType;
 
 class ThriftFooter {
 

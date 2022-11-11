@@ -1,10 +1,10 @@
 <?php
-namespace jocoon\parquet\helper;
+namespace hongkai\parquet\helper;
 
 use DateTimeImmutable;
 use DateTimeInterface;
 
-use jocoon\parquet\data\Schema;
+use hongkai\parquet\data\Schema;
 
 class OtherExtensions
 {

@@ -1,5 +1,5 @@
 <?php
-namespace jocoon\parquet\exception;
+namespace hongkai\parquet\exception;
 
 /**
  * [NotSupportedException description]

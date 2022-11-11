@@ -20,7 +20,7 @@
  * @package thrift.transport
  */
 
-namespace jocoon\parquet\transport;
+namespace hongkai\parquet\transport;
 
 use Thrift\Exception\TException;
 use Thrift\Factory\TStringFuncFactory;

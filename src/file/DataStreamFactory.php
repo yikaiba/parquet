@@ -1,14 +1,14 @@
 <?php
-namespace jocoon\parquet\file;
+namespace hongkai\parquet\file;
 
 use Exception;
 
-use jocoon\parquet\GapStreamWrapper;
-use jocoon\parquet\CompressionMethod;
-use jocoon\parquet\GzipStreamWrapper;
-use jocoon\parquet\SnappyInMemoryStreamWrapper;
+use hongkai\parquet\GapStreamWrapper;
+use hongkai\parquet\CompressionMethod;
+use hongkai\parquet\GzipStreamWrapper;
+use hongkai\parquet\SnappyInMemoryStreamWrapper;
 
-use jocoon\parquet\format\CompressionCodec;
+use hongkai\parquet\format\CompressionCodec;
 
 class DataStreamFactory
 {

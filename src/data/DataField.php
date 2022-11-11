@@ -1,7 +1,7 @@
 <?php
-namespace jocoon\parquet\data;
+namespace hongkai\parquet\data;
 
-use jocoon\parquet\helper\OtherExtensions;
+use hongkai\parquet\helper\OtherExtensions;
 
 class DataField extends Field
 {
@@ -145,9 +145,9 @@ class DataField extends Field
           $hasNulls = false;
 
           // NOTE/TODO default fallback for DateTimeDataField ?
-          return \jocoon\parquet\data\DateTimeDataField::create(
+          return \hongkai\parquet\data\DateTimeDataField::create(
             $name,
-            \jocoon\parquet\data\DateTimeFormat::Impala,
+            \hongkai\parquet\data\DateTimeFormat::Impala,
             $hasNulls,
             $isArray ?? false
           );

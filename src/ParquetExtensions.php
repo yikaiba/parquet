@@ -1,8 +1,8 @@
 <?php
-namespace jocoon\parquet;
+namespace hongkai\parquet;
 
-use jocoon\parquet\data\Schema;
-use jocoon\parquet\data\DataColumn;
+use hongkai\parquet\data\Schema;
+use hongkai\parquet\data\DataColumn;
 
 /**
  * [ParquetExtensions description]

@@ -1,9 +1,9 @@
 <?php
-namespace jocoon\parquet\helper;
+namespace hongkai\parquet\helper;
 
-use jocoon\parquet\data\Schema;
+use hongkai\parquet\data\Schema;
 
-use jocoon\parquet\format\ColumnChunk;
+use hongkai\parquet\format\ColumnChunk;
 
 class ThriftExtensions
 {

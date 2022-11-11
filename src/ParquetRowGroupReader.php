@@ -1,17 +1,17 @@
 <?php
-namespace jocoon\parquet;
+namespace hongkai\parquet;
 
-use jocoon\parquet\data\DataField;
-use jocoon\parquet\data\DataColumn;
+use hongkai\parquet\data\DataField;
+use hongkai\parquet\data\DataColumn;
 
-use jocoon\parquet\file\ThriftFooter;
-use jocoon\parquet\file\ThriftStream;
-use jocoon\parquet\file\DataColumnReader;
+use hongkai\parquet\file\ThriftFooter;
+use hongkai\parquet\file\ThriftStream;
+use hongkai\parquet\file\DataColumnReader;
 
-use jocoon\parquet\format\RowGroup;
-use jocoon\parquet\format\ColumnChunk;
+use hongkai\parquet\format\RowGroup;
+use hongkai\parquet\format\ColumnChunk;
 
-use jocoon\parquet\helper\ThriftExtensions;
+use hongkai\parquet\helper\ThriftExtensions;
 
 /**
  * [ParquetRowGroupReader description]
